@@ -28,7 +28,8 @@ creating the appropriate routes so that W. Avy's board of directors will be able
 
 2)We could also query the measurements table to get the temperature observation data for an active  station for the months of june and December.
 
-3)We could find out the precipitaiton as well
+3)We could find out the precipitaiton as well by 
+
 results = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == '06').all()
 
 results = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == '12').all()
