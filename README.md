@@ -11,6 +11,12 @@ To make the proposal more appealing plotting the results of the analysis can be 
 We have used Flask, which will let me display my results in a webpage. All that needs to be done is provide your board with the URL."
 creating the appropriate routes so that W. Avy's board of directors will be able to easily access the analysis. We have  put together a route for each segment of  analysis: Precipitation, Stations, Monthly Temperature, and Statistics, as well as a welcome route that will orient W. Avy and his associates to the webpage.
 
+**Tools Used** :-
+Jupyter Notebook:-As an IDE for writing the code.
+SQLite:To store the data for quick testing and prototyping 
+SQLAlchemy: Query tool to query the SQLite DB
+Flask: To create the web application
+
 ### Results:
 1)The statistics of Temperature retrieved for the month of june over the years indicate that June is a good month for surfing.
 
