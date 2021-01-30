@@ -30,6 +30,7 @@ creating the appropriate routes so that W. Avy's board of directors will be able
 
 3)We could find out the precipitaiton as well
 results = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == '06').all()
+
 results = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == '12').all()
 
 
