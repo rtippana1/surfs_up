@@ -14,9 +14,22 @@ creating the appropriate routes so that W. Avy's board of directors will be able
 ### Results:
 1)The statistics of Temperature retrieved for the month of june over the years indicate that June is a good month for surfing.
 
+![](Images/June%20Temps.png)
+
 2)The statistics of Temperature retrieved for the month of December over the years indicate that December is also good month for surfing.
+
+![](Images/December%20Temps.png)
 
 3)Based on the above temperates retrieved from the month of June and December indicate that  Oahu is a good lcoation for a year around of surfing ,which indicates that surf shack is a good investment .
 
 
 #### Summary:
+1)Based on the over all analysis of the temperature in june and december Oahu is a good location to open a surf shack.
+
+2)We could also query the measurements table to get the temperature observation data for an active  station for the months of june and December.
+
+3)We could find out the precipitaiton as well
+results = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == '06').all()
+results = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == '12').all()
+
+
